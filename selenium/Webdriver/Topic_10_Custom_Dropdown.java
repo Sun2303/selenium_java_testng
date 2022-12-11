@@ -33,7 +33,6 @@ public class Topic_10_Custom_Dropdown {
 		explicitWait = new WebDriverWait(driver, 30);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-		
 	}
 
 	//@Test
