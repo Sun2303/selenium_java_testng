@@ -11,7 +11,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
 
 public class Topic_13_Alert {
 	WebDriver driver;
@@ -97,13 +96,7 @@ public class Topic_13_Alert {
 	}
 	
 	public void TC_04_Authentication_Alert_II() {
-		driver.get("http://the-internet.herokuapp.com/");
-		
-		String authenUrl = driver.findElement(By.xpath("//a[text()='Basic Auth']")).getAttribute("href");
-		
-		driver.get(passUserAndPassToUrl(authenUrl, "admin", "admin"));
-		
-		Assert.assertTrue(driver.findElement(By.xpath("//p[contains(text(), 'Congratulations! You must have the proper credentials.')]")).isDisplayed());
+	
 		
 	}
 	

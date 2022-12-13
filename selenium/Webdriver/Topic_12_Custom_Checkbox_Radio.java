@@ -66,7 +66,7 @@ public class Topic_12_Custom_Checkbox_Radio {
 		Assert.assertTrue(driver.findElement(By.xpath("//div[text()='Đăng ký cho người thân']/preceding-sibling::div/input")).isSelected());
 	}
 
-	@Test
+	//@Test
 	public void TC_04_() {
 		/* CASE 4 -> PASSED (kết hợp với thư viện của Javascript - JavascriptExecutor) */
 		//Thẻ input bị ẩn nhưng vẫn muốn dùng để click (Hàm click của WebElement sẽ ko thao tác vào element bị ẩn được)
@@ -81,6 +81,7 @@ public class Topic_12_Custom_Checkbox_Radio {
 		Assert.assertTrue(driver.findElement(radioButton).isSelected());
 		
 	}
+	
 	
 	public void sleepInSecond(long timeInSecond) {
 		try {

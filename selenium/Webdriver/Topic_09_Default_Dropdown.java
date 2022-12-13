@@ -47,7 +47,6 @@ public class Topic_09_Default_Dropdown {
 		addressName = "123 X Street";
 		postalCode = "33111";
 		phoneNumber = "+13051112345";
-
 	}
 
 	@Test
