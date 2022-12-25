@@ -37,7 +37,7 @@ public class Topic_14_Action_Part_II {
 		
 	}
 
-	//@Test
+	@Test
 	public void TC_01_Click_And_Hold_Block() {
 		driver.get("https://automationfc.github.io/jquery-selectable/");
 		List<WebElement> listNumber = driver.findElements(By.cssSelector("ol#selectable>li")); //Đang chứa 12 items trong này
@@ -56,7 +56,7 @@ public class Topic_14_Action_Part_II {
 		Assert.assertEquals(selectedListNumber.size(), 8);
 	}
 
-	//@Test
+	@Test
 	public void TC_02_Click_And_Hold_Random() {
 		driver.get("https://automationfc.github.io/jquery-selectable/");
 		Keys key = null;
@@ -81,42 +81,6 @@ public class Topic_14_Action_Part_II {
 		
 	}
 
-	//@Test
-	public void TC_03_() {
-		driver.get("https://automationfc.github.io/jquery-selectable/");
-		List<WebElement> listNumber = driver.findElements(By.cssSelector("ol#selectable>li"));
-		action.clickAndHold(listNumber.get(5)).moveToElement(listNumber.get(11)).release().perform();
-		sleepInSecond(5);
-		List<WebElement> selectedNumber = driver.findElements(By.cssSelector("ol#selectable>li.ui-selected"));
-		Assert.assertEquals(selectedNumber.size(), 6);
-	}
-	
-	
-	@Test
-	public void TC_04_() {
-		driver.get("https://automationfc.github.io/jquery-selectable/");
-		Keys key = null;
-		if(osName.contains("Windows")) {
-			key = Keys.CONTROL;
-		}else {
-			key = Keys.COMMAND;
-		}
-		List<WebElement> listNumber = driver.findElements(By.cssSelector("ol#selectable>li"));
-		action.keyDown(Keys.CONTROL).perform();
-		action.click(listNumber.get(1)).click(listNumber.get(5)).click(listNumber.get(11)).perform();
-		action.keyUp(key).perform();
-		sleepInSecond(3);
-		List<WebElement> selectedListNumber = driver.findElements(By.cssSelector("ol#selectable>li.ui-selected"));
-		Assert.assertEquals(selectedListNumber.size(), 3);
-		
-	}
-	
-	
-	
-	@Test
-	public void TC_05_() {
-
-	}
 	
 	public void sleepInSecond(long timeInSecond) {
 		try {

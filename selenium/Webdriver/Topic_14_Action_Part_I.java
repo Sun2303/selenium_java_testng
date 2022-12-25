@@ -74,18 +74,6 @@ public class Topic_14_Action_Part_I {
 	}
 	
 	
-	@Test
-	public void TC_04_() {
-
-	}
-	
-	
-	
-	@Test
-	public void TC_05_() {
-
-	}
-	
 	public void sleepInSecond(long timeInSecond) {
 		try {
 			Thread.sleep(timeInSecond * 1000);
