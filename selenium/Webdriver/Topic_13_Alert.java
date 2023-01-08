@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 public class Topic_13_Alert {
 	WebDriver driver;
@@ -35,7 +36,7 @@ public class Topic_13_Alert {
 		
 	}
 
-	//@Test
+	@Test
 	public void TC_01_Accept_Alert() {
 		driver.get("https://automationfc.github.io/basic-form/index.html");
 		driver.findElement(By.xpath("//button[text()='Click for JS Alert']")).click();

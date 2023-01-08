@@ -26,7 +26,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class Topic_14_Action_Part_III {
+public class Topic_16_Action_Part_III {
 	WebDriver driver;
 	Actions action;
 	Alert alert;
